@@ -1,0 +1,30 @@
+  .bg {
+    background-image: url('./images/sunflower.avif');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-body {
+    position: relative;
+    animation: slideIn 1s forwards;
+    opacity: 0;
+  }
+
+  @keyframes slideIn {
+    from {
+      left: -100%;
+      opacity: 0;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  .rounded-circle {
+    width: 150px;
+    border-radius: 50%;
+  }
+  

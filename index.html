@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Profile</title>
+    <!-- Style Project -->
+    <link rel="stylesheet" href="./mystyle.css" />
+    <!-- Script Project -->
+    <script src="./myscripts.js"></script>
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -19,6 +23,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
       rel="stylesheet"
     />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
 
   <body class="bg">
@@ -29,10 +39,12 @@
             <div class="card mb-4">
               <div class="card-body text-center">
                 <img
-                  src="https://lh3.googleusercontent.com/proxy/L_50n8x_nONdKAiD54T9z7mVmW97bPR-6UAIKKs36ibbdUhyDgtqbMF0zGdqWtKJfB-Nixc6VTeRBHUIkvZc-2XL5u5dLjuSEHDTrT8_WWgAlBNXrBNCOB8-pUY8lrZ-dlA"
+                  src="./images/ai.jpg"
                   alt="avatar"
                   class="rounded-circle img-fluid"
                   style="width: 150px"
+                  data-toggle="modal"
+                  data-target="#imageModal"
                 />
                 <h5 class="my-3">Sitthichai Tongprateang</h5>
                 <p class="text-muted mb-1">Full Stack Developer</p>
@@ -66,7 +78,7 @@
                     class="list-group-item d-flex justify-content-between align-items-center p-3 text-center"
                   >
                     <img
-                      src="be93b430-6d7d-408c-ba8b-4ba7866ec90c.jpg
+                      src="./images/qr.png
                       "
                       alt="alternatetext"
                       width="287"
@@ -75,17 +87,6 @@
                       style="border-radius: 12px; padding: 5px"
                     />
                   </li>
-                  <!-- <li
-                    class="list-group-item d-flex justify-content-between align-items-center p-3 text-center"
-                  >
-                    <img
-                      src="https://www.pixartprinting.it/blog/wp-content/uploads/2022/06/qr_code_cos_e.png"
-                      alt="alternatetext"
-                      width="93"
-                      height="93"
-                      class="mx-auto"
-                    />
-                  </li> -->
                 </ul>
               </div>
             </div>
@@ -116,7 +117,7 @@
                     <p class="mb-0">Phone</p>
                   </div>
                   <div class="col-sm-9">
-                    <p class="text-muted mb-0">(097) 000-0000</p>
+                    <p class="text-muted mb-0">(097) 5X6-XX07</p>
                   </div>
                 </div>
                 <hr />
@@ -125,32 +126,37 @@
                     <p class="mb-0">Address</p>
                   </div>
                   <div class="col-sm-9">
-                    <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                    <p class="text-muted mb-0">Thiland, Ayutthaya</p>
                   </div>
                 </div>
                 <hr />
-                <div class="row">
-                  <div class="col-sm-3">
-                    <p class="mb-0">Facebook</p>
+                <a
+                  href="https://web.facebook.com/profile.php?id=100000592124652"
+                  style="color: inherit"
+                >
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Facebook</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0">Fluk Sitthichai</p>
+                    </div>
                   </div>
-                  <div class="col-sm-9">
-                    <a
-                      href="https://web.facebook.com/profile.php?id=100000592124652"
-                      ><p class="text-muted mb-0">Fluk Sitthichai</p></a
-                    >
-                  </div>
-                </div>
+                </a>
                 <hr />
-                <div class="row">
-                  <div class="col-sm-3">
-                    <p class="mb-0">Instagram</p>
+                <a
+                  href="https://www.instagram.com/fluk_bunny0/"
+                  style="color: inherit"
+                >
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Instagram</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0">fluk_bunny0</p>
+                    </div>
                   </div>
-                  <div class="col-sm-9">
-                    <a href="https://www.instagram.com/fluk_bunny0/"
-                      ><p class="text-muted mb-0">fluk_bunny0</p></a
-                    >
-                  </div>
-                </div>
+                </a>
                 <hr />
                 <div class="row">
                   <div class="col-sm-3">
@@ -170,68 +176,96 @@
                       <span class="text-primary font-italic me-1"
                         >assigment</span
                       >
-                      Project Status
+                      Work Status
                     </p>
-                    <p class="mb-1" style="font-size: 0.77rem">Web Design</p>
-                    <div class="progress rounded" style="height: 5px">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 80%"
-                        aria-valuenow="80"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <p class="mb-1" style="font-size: 0.77rem">
+                      Frontend Developer
+                    </p>
+                    <div style="height: 5px">
+                      <div style="width: 80%">
+                        <i
+                          class="fab fa-vuejs fa-lg"
+                          style="margin-right: 20px"
+                        ></i>
+                        <i
+                          class="fab fa-react fa-lg"
+                          style="margin-right: 20px"
+                        ></i>
+                        <i
+                          class="fa-brands fa-figma fa-lg"
+                          style="margin-right: 20px"
+                        ></i>
+                        <i
+                          class="fa-brands fa-html5 fa-lg"
+                          style="margin-right: 20px"
+                        ></i>
+                        <i
+                          class="fa-brands fa-css3-alt fa-lg"
+                          style="margin-right: 20px"
+                        ></i>
+                      </div>
+                    </div>
+                    <p class="mt-4 mb-1" style="font-size: 0.77rem">Tools</p>
+                    <div style="height: 5px">
+                      <div style="width: 80%">
+                        <i class="fa-solid fa-code fa-lg"> vscode </i>
+                      </div>
+                    </div>
+                    <p class="mt-4 mb-1" style="font-size: 0.77rem">Database</p>
+                    <div style="height: 5px">
+                      <div style="width: 80%">
+                        <i
+                          class="fa-solid fa-database fa-lg"
+                          style="margin-right: 20px"
+                        >
+                          MySQL</i
+                        >
+                        <i
+                          class="fa-solid fa-server fa-lg"
+                          style="margin-right: 20px"
+                        >
+                          Mongodb</i
+                        >
+                      </div>
                     </div>
                     <p class="mt-4 mb-1" style="font-size: 0.77rem">
-                      Website Markup
+                      Mobile Application
                     </p>
-                    <div class="progress rounded" style="height: 5px">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 72%"
-                        aria-valuenow="72"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                    <p class="mt-4 mb-1" style="font-size: 0.77rem">One Page</p>
-                    <div class="progress rounded" style="height: 5px">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 89%"
-                        aria-valuenow="89"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div style="height: 5px">
+                      <div style="width: 80%">
+                        <i
+                          class="fab fa-react fa-lg"
+                          style="margin-right: 20px"
+                        >
+                        </i>
+                      </div>
                     </div>
                     <p class="mt-4 mb-1" style="font-size: 0.77rem">
-                      Mobile Template
+                      Backend Developer
                     </p>
-                    <div class="progress rounded" style="height: 5px">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 55%"
-                        aria-valuenow="55"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                    <p class="mt-4 mb-1" style="font-size: 0.77rem">
-                      Backend API
-                    </p>
-                    <div class="progress rounded mb-2" style="height: 5px">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 66%"
-                        aria-valuenow="66"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="mb-2" style="height: 5px">
+                      <div style="width: 80%">
+                        <i
+                          class="fa-brands fa-node fa-lg"
+                          style="margin-right: 20px"
+                        ></i>
+                        <i
+                          class="fa-brands fa-java fa-lg"
+                          style="margin-right: 20px"
+                        ></i>
+                        <i
+                          class="fa-brands fa-js fa-lg"
+                          style="margin-right: 20px"
+                        ></i>
+                        <i
+                          class="fa-brands fa-python fa-lg"
+                          style="margin-right: 20px"
+                        ></i>
+                        <i
+                          class="fa-brands fa-php fa-lg"
+                          style="margin-right: 20px"
+                        ></i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -243,9 +277,11 @@
                       <span class="text-primary font-italic me-1"
                         >assigment</span
                       >
-                      Project Status
+                      Daily Routine
                     </p>
-                    <p class="mb-1" style="font-size: 0.77rem">Web Design</p>
+                    <p class="mb-1" style="font-size: 0.77rem">
+                      Develop Yourselfn
+                    </p>
                     <div class="progress rounded" style="height: 5px">
                       <div
                         class="progress-bar"
@@ -256,18 +292,16 @@
                         aria-valuemax="100"
                       ></div>
                     </div>
-                    <p class="mt-4 mb-1" style="font-size: 0.77rem">
-                      Website Markup
-                    </p>
-                    <div class="progress rounded" style="height: 5px">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 72%"
-                        aria-valuenow="72"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <p class="mt-4 mb-1" style="font-size: 0.77rem">Hobby</p>
+                    <div style="height: 5px">
+                      <i
+                        class="fa-solid fa-gamepad fa-lg"
+                        style="margin-right: 20px"
+                      ></i>
+                      <i
+                        class="fa-solid fa-person-running fa-lg"
+                        style="margin-right: 20px"
+                      ></i>
                     </div>
                     <p class="mt-4 mb-1" style="font-size: 0.77rem">One Page</p>
                     <div class="progress rounded" style="height: 5px">
@@ -314,20 +348,48 @@
         </div>
       </div>
     </section>
+
+    <!-- dialog profile -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabel">รูป Avatar</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> -->
+          <div class="modal-body text-center">
+            <img
+              src="./images/ai_gif.gif"
+              alt="avatar"
+              class="img-fluid"
+              style="width: 700px; height: 300px"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
-<style>
-  .bg {
-    /* The image used */
-    background-image: url("https://images.unsplash.com/photo-1598920710727-e6c74781538c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-</style>
-<script></script>
