@@ -6,4 +6,15 @@ $(document).ready(function () {
         var modal = $(this)
         modal.find('#recipient-img').attr('src', recipient);
     })
+    $('#mongoIcon').tooltip({
+        trigger: 'manual',
+    });
+
+    $('#mongoIcon').on('mousedown', function () {
+        $(this).tooltip('show');
+    });
+
+    $('#mongoIcon').on('mouseup', function () {
+        $(this).tooltip('hide');
+    });
 });
