@@ -6,8 +6,6 @@
     <title>Profile</title>
     <!-- Style Project -->
     <link rel="stylesheet" href="./mystyle.css" />
-    <!-- Script Project -->
-    <script src="./myscripts.js"></script>
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -24,11 +22,13 @@
       rel="stylesheet"
     />
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
     <!-- Popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Script Project -->
+    <script src="./myscripts.js"></script>
   </head>
 
   <body class="bg">
@@ -39,12 +39,13 @@
             <div class="card mb-4">
               <div class="card-body text-center">
                 <img
-                  src="./images/ai.jpg"
+                  src="./images/me.jpg"
                   alt="avatar"
                   class="rounded-circle img-fluid"
                   style="width: 150px"
                   data-toggle="modal"
                   data-target="#imageModal"
+                  data-src="./images/ai.gif"
                 />
                 <h5 class="my-3">Sitthichai Tongprateang</h5>
                 <p class="text-muted mb-1">Full Stack Developer</p>
@@ -75,17 +76,37 @@
                     >
                   </li>
                   <li
-                    class="list-group-item d-flex justify-content-between align-items-center p-3 text-center"
+                    class="list-group-item d-flex justify-content-between align-items-center p-3"
+                    data-toggle="modal"
+                    data-target="#imageModal"
+                    data-src="./images/qr.png"
                   >
-                    <img
-                      src="./images/qr.png
-                      "
-                      alt="alternatetext"
-                      width="287"
-                      height="287"
-                      class="mx-auto"
-                      style="border-radius: 12px; padding: 5px"
-                    />
+                    <i class="fa-solid fa-qrcode fa-lg"></i>
+                    <p class="mb-0">Click to help from QR code Support me</p>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center p-3"
+                  >
+                    <i class="fa-solid fa-qrcode fa-lg"></i>
+                    <p class="mb-0">qr</p>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center p-3"
+                  >
+                    <i class="fa-solid fa-qrcode fa-lg"></i>
+                    <p class="mb-0">qr</p>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center p-3"
+                  >
+                    <i class="fa-solid fa-qrcode fa-lg"></i>
+                    <p class="mb-0">qr</p>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center p-3"
+                  >
+                    <i class="fa-solid fa-qrcode fa-lg"></i>
+                    <p class="mb-0">qr</p>
                   </li>
                 </ul>
               </div>
@@ -208,7 +229,13 @@
                     <p class="mt-4 mb-1" style="font-size: 0.77rem">Tools</p>
                     <div style="height: 5px">
                       <div style="width: 80%">
-                        <i class="fa-solid fa-code fa-lg"> vscode </i>
+                        <i
+                          class="fa-solid fa-code fa-lg"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="visual studio code"
+                        >
+                        </i>
                       </div>
                     </div>
                     <p class="mt-4 mb-1" style="font-size: 0.77rem">Database</p>
@@ -217,15 +244,19 @@
                         <i
                           class="fa-solid fa-database fa-lg"
                           style="margin-right: 20px"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="MySQL"
                         >
-                          MySQL</i
-                        >
+                        </i>
                         <i
                           class="fa-solid fa-server fa-lg"
                           style="margin-right: 20px"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="MongoDB"
                         >
-                          Mongodb</i
-                        >
+                        </i>
                       </div>
                     </div>
                     <p class="mt-4 mb-1" style="font-size: 0.77rem">
@@ -236,6 +267,9 @@
                         <i
                           class="fab fa-react fa-lg"
                           style="margin-right: 20px"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="React Native"
                         >
                         </i>
                       </div>
@@ -248,22 +282,37 @@
                         <i
                           class="fa-brands fa-node fa-lg"
                           style="margin-right: 20px"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Node.js"
                         ></i>
                         <i
                           class="fa-brands fa-java fa-lg"
                           style="margin-right: 20px"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Java"
                         ></i>
                         <i
                           class="fa-brands fa-js fa-lg"
                           style="margin-right: 20px"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="JavaScript"
                         ></i>
                         <i
                           class="fa-brands fa-python fa-lg"
                           style="margin-right: 20px"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Python"
                         ></i>
                         <i
                           class="fa-brands fa-php fa-lg"
                           style="margin-right: 20px"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="PHP"
                         ></i>
                       </div>
                     </div>
@@ -297,10 +346,16 @@
                       <i
                         class="fa-solid fa-gamepad fa-lg"
                         style="margin-right: 20px"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Gameing"
                       ></i>
                       <i
                         class="fa-solid fa-person-running fa-lg"
                         style="margin-right: 20px"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Running"
                       ></i>
                     </div>
                     <p class="mt-4 mb-1" style="font-size: 0.77rem">One Page</p>
@@ -365,12 +420,7 @@
       >
         <div class="modal-content">
           <div class="modal-body text-center">
-            <img
-              src="./images/ai_gif.gif"
-              alt="avatar"
-              class="img-fluid"
-              style="width: 700px; height: 300px"
-            />
+            <img id="recipient-img" alt="avatar" class="img-fluid" />
           </div>
           <div class="modal-footer">
             <button
@@ -378,7 +428,7 @@
               class="btn btn-secondary"
               data-dismiss="modal"
             >
-              ปิด
+              Close
             </button>
           </div>
         </div>
