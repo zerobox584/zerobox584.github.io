@@ -231,9 +231,10 @@
                       <div style="width: 80%">
                         <i
                           class="fa-solid fa-code fa-lg"
-                          data-toggle="tooltip"
-                          data-placement="top"
-                          title="visual studio code"
+                          data-toggle="modal"
+                          data-target="#resultModal"
+                          data-text="visual studio code"
+                          data-src="./images/Visual_Studio_Code.png"
                         >
                         </i>
                       </div>
@@ -250,9 +251,11 @@
                         >
                         </i>
                         <i
-                          class="fa-solid fa-server fa-lg more_info"
+                          class="fa-solid fa-server fa-lg"
                           style="margin-right: 20px"
-                          title="also called an underscore"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="MongoDB"
                         >
                         </i>
                       </div>
@@ -419,6 +422,46 @@
         <div class="modal-content">
           <div class="modal-body text-center">
             <img id="recipient-img" alt="avatar" class="img-fluid" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- dialog Icon -->
+    <div
+      class="modal fade"
+      id="resultModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog d-flex justify-content-center align-items-center"
+        style="height: 90%"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img
+              id="recipient-img"
+              alt="avatar"
+              class="img-fluid"
+              width="200px"
+              height="200px"
+            />
+            <br />
+            <br />
+            <p id="recipient-text"></p>
           </div>
           <div class="modal-footer">
             <button
