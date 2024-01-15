@@ -17,6 +17,7 @@
       left: -100%;
       opacity: 0;
     }
+
     to {
       left: 0;
       opacity: 1;
@@ -27,4 +28,17 @@
     width: 150px;
     border-radius: 50%;
   }
-  
+
+  .more_info {
+    /* border-bottom: 1px dotted; */
+    position: relative;
+  }
+
+  .more_info .title {
+    position: absolute;
+    top: 20px;
+    background: silver;
+    padding: 4px;
+    left: 0;
+    white-space: nowrap;
+  }

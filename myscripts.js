@@ -6,4 +6,15 @@ $(document).ready(function () {
         var modal = $(this)
         modal.find('#recipient-img').attr('src', recipient);
     })
+
+    $(".more_info").click(function () {
+        var $title = $(this).find(".title");
+        if (!$title.length) {
+            $(this).append('<span class="title">' + $(this).attr("title") + '</span>');
+        } else {
+            $title.remove();
+        }
+    });
 });
+
+
